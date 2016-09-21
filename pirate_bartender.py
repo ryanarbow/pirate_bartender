@@ -35,20 +35,20 @@ def drink_order():
             order[k] = False
     return order 
     
-def drink_constructor(order,ingredients):
+def drink_constructor(order):
     """
     Take preferences from "order" dictionary as parameter
     Append corresponding ingredient
     """
-    #Dictionary inside function
+    #List inside function
     menu = []
     for k,v in order.items():
         if v == True:
-            print 
+            print ingredients[v]
     return 
         
 if __name__ == '__main__':
     drink_order()
-    drink_constructor(order, ingredients)
+    drink_constructor(order)
     
     
