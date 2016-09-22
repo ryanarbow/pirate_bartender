@@ -49,4 +49,5 @@ def drink_constructor(order):
         
 if __name__ == '__main__':
     drink_order()
-    drink_constructor(order)
+    print(drink_constructor(order))
+    
