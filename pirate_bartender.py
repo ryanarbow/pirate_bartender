@@ -43,12 +43,10 @@ def drink_constructor(order):
     #List inside function
     menu = []
     for k,v in order.items():
-        if v == True:
-            print ingredients[v]
-    return 
+        if v:
+            menu.append(random.choice(ingredients[k]))
+    return menu
         
 if __name__ == '__main__':
     drink_order()
     drink_constructor(order)
-    
-    
